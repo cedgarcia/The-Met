@@ -7,10 +7,19 @@
   --white: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+/*** 
+***Base 
+***/
+*,
+*::after,
+*::before {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
 }
 html {
   font-family: "Inria Sans", sans-serif;
@@ -18,21 +27,51 @@ html {
   line-height: 1.6;
   width: 100%;
 }
-a {
-  text-decoration: none;
-  display: block;
+
+h1,
+h2,
+h3 {
+  letter-spacing: 2px;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 li {
   list-style: none;
+  font-family: "Fira Sans", sans-serif;
+  padding: 0 1.3rem;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: var(--lightGray);
 }
-img,
-video {
+li:nth-child(1) {
+  padding: 0;
+}
+li:last-child {
+  padding: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--white);
+}
+img {
   width: 100%;
 }
-h1 {
-  color: var(--blue);
-  font-size: 4rem;
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
+
 button,
 input[type="submit"],
 input[type="reset"] {
@@ -286,4 +325,175 @@ Hoodie & sweatshirts
   font-size: 2.5rem;
   text-align: center;
   background-color: red;
+}
+
+/* ********FOOTER**************** */
+
+footer {
+  /* padding: 9rem 7rem 0; */
+  height: 100vh;
+  width: 100%;
+  background: var(--dark-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+footer h1 {
+  font-size: 4rem;
+}
+footer h3 {
+  font-size: 2rem;
+  max-width: 75%;
+}
+.top-line {
+  margin-top: 7rem;
+}
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7rem;
+  flex-basis: 100%;
+}
+.footer-header {
+  padding-bottom: 2rem;
+}
+.signup-wrap {
+  position: relative;
+  display: flex;
+}
+.signup-wrap input {
+  padding: 0.3em 0;
+  margin-top: 0.6em;
+  width: 50%;
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid var(--white);
+  background: transparent;
+  margin: 0 2rem 0 0;
+}
+.signup-wrap label {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  /* transition-property: all;
+  transition-duration: 0.5s;
+  pointer-events: none; */
+  font-weight: lighter;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  opacity: 0.5;
+}
+.signup-wrap button {
+  border: 1px solid var(--white);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding: 0.5rem 3rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 30%;
+}
+.footer-links a {
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+@media (min-width: 912px) {
+  .mobile {
+    display: none;
+  }
+}
+.column1,
+.column2,
+.column3 {
+  display: flex;
+  flex-direction: column;
+}
+.footer-bottom-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7rem;
+  letter-spacing: 1px;
+}
+.copyright {
+  font-size: 1.4rem;
+}
+.terms-privacy > * {
+  padding: 0 1rem;
+  font-size: 1.3rem;
+}
+
+/* Mobile */
+
+@media (max-width: 912px) {
+  /* footer {
+    display: none;
+  } */
+  .footer-wrap {
+    padding: 0 4rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  .footer-links {
+    padding: 4rem;
+  }
+
+  .signup-wrap {
+    flex-direction: column;
+  }
+  .signup-wrap input {
+    width: 100%;
+  }
+  .signup-wrap button {
+    margin-top: 2rem;
+  }
+  .signup-wrap label {
+    position: absolute;
+    top: 5%;
+  }
+  .footer-bottom-text {
+    padding: 0;
+  }
+  .desktop {
+    display: none;
+  }
+  .top-line {
+    display: none;
+  }
+
+  .footer-bottom-text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "b c"
+      "a a";
+  }
+
+  .copyright {
+    text-align: center;
+    font-size: 1rem;
+    grid-area: a;
+  }
+  .terms-privacy {
+    width: 100vw;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .terms {
+    text-align: center;
+    grid-area: b;
+  }
+  .privacy {
+    text-align: center;
+    grid-area: c;
+  }
 }
