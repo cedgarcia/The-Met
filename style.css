@@ -150,6 +150,9 @@ nav > * {
 }
 
 @media (max-width: 912px) {
+  nav {
+    padding: 1rem 2rem;
+  }
   .nav-icons img {
     width: 1.8rem;
     margin: 0 1rem;
@@ -573,7 +576,7 @@ header .hero-desktop img {
 ** */
 /* Sections */
 
-.the-met {
+/* .the-met {
   z-index: 3;
   margin-top: -50vh;
 
@@ -585,12 +588,12 @@ header .hero-desktop img {
   color: var(--dark-brown);
   font-size: 38rem;
   text-transform: uppercase;
-}
+} */
 
 section.men-women {
   display: flex;
   justify-content: space-between;
-  padding: 0 7rem;
+  padding: 2rem 7rem;
   /* height: 100vh; */
   /* width: 100%; */
 }
@@ -608,6 +611,10 @@ section.men-women {
   font-size: 2rem;
   /* width: 90%; */
 }
+.men,
+.women {
+  padding: 3rem;
+}
 .men button {
   margin-top: 35%;
   margin-left: 3%;
@@ -621,12 +628,20 @@ section.men-women {
 .new-arrivals {
   padding: 0 6rem;
 }
+.new-arrivals h1 {
+  font-size: 4rem;
+  color: var(--blue);
+}
 .product-slider {
   display: flex;
+  width: 100%;
 }
 .product-container {
+  justify-content: space-around;
   width: 25%;
   padding: 1rem;
+  /* max-width: 20%; */
+  /* max-height: 0%; */
 }
 .product-info {
   color: var(--blue);
@@ -785,9 +800,9 @@ h3 {
 /***
 Hoodie & sweatshirts 
  ***/
-.hoodie-sweatshirts {
-  /* display: flex; */
-  /* justify-content: center; */
+/* .hoodie-sweatshirts {
+  display: flex;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
@@ -809,7 +824,7 @@ Hoodie & sweatshirts
   font-size: 2.5rem;
   text-align: center;
   background-color: red;
-}
+} */
 
 /* ********FOOTER**************** */
 
@@ -980,5 +995,249 @@ footer h3 {
   .privacy {
     text-align: center;
     grid-area: c;
+  }
+}
+/* ******HOMEPAGE********* */
+
+.homepage-header {
+  position: relative;
+  padding: 0;
+}
+.homepage-header h1 {
+  /* padding: 7rem; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: var(--white);
+  text-align: center;
+  width: 100%;
+}
+.the-met {
+  z-index: 3;
+  /* margin-top: -0vh; */
+
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.the-met h1 {
+  color: var(--dark-brown);
+  font-size: 30rem;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.men-women {
+  margin-top: 8rem;
+}
+
+.product-image {
+  background-color: green;
+  height: 400px;
+  width: 100%;
+}
+.product-image img {
+  width: 100%; /* or any custom size */
+  height: 100%;
+  object-fit: cover;
+}
+.produc .product-container {
+  padding: 1rem;
+}
+.hoodie-sweatshirts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+.hoodie-sweatshirts .text {
+  text-align: center;
+  color: var(--blue);
+
+  width: 70rem;
+  margin-left: -12rem;
+}
+.hoodie-sweatshirts .image {
+  margin-right: -12rem;
+}
+.text h1 {
+  font-size: 4rem;
+}
+.text .description {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+.collections {
+  position: relative;
+  padding: 2rem 7rem;
+}
+.collection img {
+  width: 100%;
+}
+.collection button {
+  position: absolute;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  background: var(--brown);
+  color: var(--blue);
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  bottom: 20rem;
+  left: 15rem;
+  /* width: 90%; */
+}
+.collection-h1,
+.travel-h1,
+.testimonial-h1 {
+  padding-top: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  color: var(--blue);
+}
+.travel-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.travel-wrapper img {
+  height: 400px;
+  width: 100%;
+}
+
+.travel-wrapper h3 {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  text-decoration: underline;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--blue);
+}
+.testimonials {
+  background-color: #d6b695;
+}
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.testimonial {
+  text-align: center;
+  padding: 0 5rem;
+}
+.testimonial h3 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.testimonial p {
+  font-size: 1.5rem;
+}
+@media (max-width: 912px) {
+  .homepage-header h1 {
+    font-size: 3rem;
+  }
+  .men-women {
+    margin-top: 6rem;
+  }
+
+  section.men-women {
+    display: flex;
+
+    flex-direction: column-reverse;
+    padding: 0 7rem;
+    /* height: 100vh; */
+    /* width: 100%; */
+  }
+  .hoodie-sweatshirts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hoodie-sweatshirts .text {
+    margin-left: 0rem;
+    padding-bottom: 2rem;
+  }
+  .hoodie-sweatshirts .image {
+    margin-right: -0rem;
+  }
+  .collection-h1,
+  .travel-h1,
+  .testimonial-h1 {
+    font-size: 2rem;
+  }
+  .collection button {
+    width: 70%;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    /* width: 90%; */
+  }
+  .travel-wrapper {
+    flex-direction: column;
+  }
+  .testimonial:nth-child(2) {
+    display: none;
+  }
+}
+
+/* THEMET */
+@media (max-width: 1190px) {
+  .the-met h1 {
+    font-size: 25rem;
+  }
+}
+@media (max-width: 991px) {
+  .the-met h1 {
+    font-size: 23rem;
+  }
+}
+@media (max-width: 915px) {
+  .the-met h1 {
+    font-size: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  .the-met h1 {
+    font-size: 17rem;
+  }
+  .product-container {
+    width: 100%;
+  }
+  .product-container:nth-child(2) {
+    display: none;
+  }
+  .product-container:nth-child(3) {
+    display: none;
+  }
+  .product-container:nth-child(4) {
+    display: none;
+  }
+  .testimonial:nth-child(2),
+  .testimonial:nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 690px) {
+  .the-met h1 {
+    font-size: 14rem;
+  }
+}
+@media (max-width: 570px) {
+  .the-met h1 {
+    font-size: 12rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .the-met h1 {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .the-met h1 {
+    font-size: 7rem;
   }
 }

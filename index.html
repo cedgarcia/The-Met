@@ -11,47 +11,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="newstyle.css" />
     <title>The Met</title>
   </head>
   <body>
     <div class="promo">Free worldwide shipping and free returns</div>
-    <header>
-      <!-- ***********START OF NAV************************ -->
-      <nav>
-        <div class="mobile-menu">
-          <img src="./images/icons/menu.png" alt="burger-menu" />
-        </div>
-
-        <ul class="nav-list">
-          <li><a href="./pages/shop.html">Shop</a></li>
-          <li><a href="">Collections</a></li>
-          <li><a href="">Blog</a></li>
-          <li><a href="./pages/about.html">About us</a></li>
-          <li><a href="./pages/contact.html">Contact</a></li>
-        </ul>
-        <h1 class="logo"><a href="index.html">The Met</a></h1>
-        <div class="nav-icons">
-          <img src="./images/icons/searchinverted.png" alt="search-icon" />
-          <img src="./images/icons/userinverted.png" alt="account-icon" />
-          <img src="./images/icons/shoppingbaginverted.png" alt="cart-icon" />
-        </div>
-      </nav>
-
-      <!-- <div class="hero hero-mobile">
-        <img src="images/hero-background.png" alt="Hero image" />
-      </div> -->
-      <div class="hero hero-desktop">
-        <div class="hero-text-container">
-          <div class="hero-text">
-            <h1>
-              Step up your style game. <br />
-              The ultimate destination for trendsetters.
-            </h1>
-            <button>Shop Now</button>
-          </div>
-        </div>
-        <img src="images/hero-background.png" alt="Hero image" />
-      </div>
+    <!-- *****************LANDING PAGE***************************** -->
+    <header class="homepage-header">
+      <img src="./images/homepage/hero-background.png" alt="" />
+      <h1>
+        Step up your style game. <br />
+        The ultimate destination for trendsetters.
+      </h1>
     </header>
     <!-- Buttons fixed -->
     <div class="buttons">
@@ -60,6 +31,26 @@
         <img src="./images/icons/questioninverted.png" alt="" /> Help
       </button>
     </div>
+    <!-- ***********START OF NAV************************ -->
+    <nav>
+      <div class="mobile-menu">
+        <img src="./images/icons/menu.png" alt="burger-menu" />
+      </div>
+
+      <ul class="nav-list">
+        <li><a href="./pages/shop.html">Shop</a></li>
+        <li><a href="">Collections</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="./pages/about.html">About us</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+      <h1 class="logo"><a href="index.html">The Met</a></h1>
+      <div class="nav-icons">
+        <img src="./images/icons/searchinverted.png" alt="search-icon" />
+        <img src="./images/icons/userinverted.png" alt="account-icon" />
+        <img src="./images/icons/shoppingbaginverted.png" alt="cart-icon" />
+      </div>
+    </nav>
 
     <main>
       <section class="the-met">
@@ -68,14 +59,11 @@
       <section class="men-women">
         <div class="men">
           <button>Shop Men</button>
-          <img src="./images/gettyimages-639275740-1024x1024.jpg" alt="" />
+          <img src="./images/homepage/shop-men.jpg" alt="" />
         </div>
         <div class="women">
           <button>Shop Women</button>
-          <img
-            src="./images/Category_Women-PRL-v4_-_landscape_93decdfc-59c6-4ebc-abec-83cb60cf8c21_1080x.png"
-            alt=""
-          />
+          <img src="./images/homepage/shop-women.png" alt="" />
         </div>
       </section>
 
@@ -85,7 +73,7 @@
           <!-- 1 -->
           <div class="product-container">
             <div class="product-image">
-              <img src="./images/SENECAVantaPantOlive5_670x.webp" alt="" />
+              <img src="./images/homepage/slider-item-1.png" alt="" />
             </div>
             <div class="product-info">
               <div class="product-desc">
@@ -98,10 +86,7 @@
           <!-- 2 -->
           <div class="product-container">
             <div class="product-image">
-              <img
-                src="./images/SENECAVantaPantGreyPinstripe4_670x.webp"
-                alt=""
-              />
+              <img src="./images/homepage/slider-item-2.png" alt="" />
             </div>
             <div class="product-info">
               <div class="product-desc">
@@ -114,7 +99,7 @@
           <!--3  -->
           <div class="product-container">
             <div class="product-image">
-              <img src="./images/3.6.23_SS23_Buttons3_1024x.webp" alt="" />
+              <img src="./images/homepage/slider-item-3.png" alt="" />
             </div>
             <div class="product-info">
               <div class="product-desc">
@@ -127,10 +112,7 @@
           <!-- 4 -->
           <div class="product-container">
             <div class="product-image">
-              <img
-                src="./images/11_SS23_OMWS5501A_PEBBLEGREY_002_300x400.webp"
-                alt=""
-              />
+              <img src="./images/homepage/slider-item-4.png" alt="" />
             </div>
             <div class="product-info">
               <div class="product-desc">
@@ -145,7 +127,7 @@
       </section>
       <section class="hoodie-sweatshirts">
         <div class="image">
-          <img src="./images/hoodie.jpg" alt="" />
+          <img src="./images/homepage/hoodie.jpg" alt="hoodie   " />
         </div>
         <div class="text">
           <h1>Hoodie & Sweatshirts</h1>
@@ -162,6 +144,56 @@
       <section class=""></section>
       <section class=""></section>
     </main>
+    <!-- ***********COLLECTIONS**************************** -->
+
+    <h1 class="collection-h1">
+      Twice as stylish, together as one <br />
+      Shop our couples' fashion now!
+    </h1>
+    <section class="collections">
+      <div class="collection">
+        <button>View Collections</button>
+        <img src="./images/homepage/shop-menandwomen.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- ***********Travel**************************** -->
+
+    <h1 class="travel-h1">Travel in style and ease with our premium</h1>
+
+    <section class="travel-wrapper">
+      <div class="travel-bag">
+        <h3>Travelling Bag</h3>
+        <img src="./images/homepage/bag.png" alt="" />
+      </div>
+      <div class="travel-shoes">
+        <h3>Travelling Shoes</h3>
+        <img src="./images/homepage/shoes.png" alt="" />
+      </div>
+    </section>
+    <!-- **************TESTIMONIAL**************************** -->
+
+    <section class="testimonials">
+      <h1 class="testimonial-h1">LET CUSTOMERS SPEAK FOR US</h1>
+
+      <div class="testimonial-wrapper">
+        <div class="testimonial">
+          <h3>Great</h3>
+          <p>Great bag -sturdy and unique</p>
+          <p>-Cole Jordan of the <u> Kirby Vase </u></p>
+        </div>
+        <div class="testimonial">
+          <h3>Suede boots</h3>
+          <p>Love them!</p>
+          <p>- Andres Garcia Men's<u> Originals Suede Boots</u></p>
+        </div>
+        <div class="testimonial">
+          <h3>The perfect fit</h3>
+          <p>This shirt has a perfect fit for me.</p>
+          <p>-Anonymous <u>Aleks Cord Shirt </u></p>
+        </div>
+      </div>
+    </section>
 
     <!--************* START OF FOOTER **************-->
     <footer>
