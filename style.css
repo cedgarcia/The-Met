@@ -640,9 +640,7 @@ Hoodie & sweatshirts
   width: 100%;
   padding: 0 7rem;
 }
-.hoodie-sweatshirts > * {
-  /* flex-basis: 100%; */
-}
+
 .hoodie-sweatshirts .image {
   width: 60vw;
 }
