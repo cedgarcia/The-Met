@@ -276,6 +276,158 @@ textarea {
     justify-content: flex-end;
   }
 }
+/* **************ABOUT PAGE************************ */
+.about-header {
+  position: relative;
+}
+.about-header h2 {
+  padding: 7rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 6rem;
+  color: #070663;
+}
+.about-wrapper {
+  background: #d6b695;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+}
+.about-text h1 {
+  font-size: 4rem;
+  color: #070663;
+}
+.about-text .text {
+  font-size: 2rem;
+  color: #070663;
+  width: 60%;
+  line-height: 1.8;
+  font-weight: bold;
+}
+.about-text button {
+  background-color: #d1a473;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 2rem 4rem;
+  padding: 1rem 2rem;
+}
+.about-image {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  position: relative;
+}
+.image-container {
+  width: 30rem;
+}
+.image-1 {
+  position: absolute;
+  left: -15rem;
+  bottom: 5rem;
+}
+.about-mobile {
+  display: none;
+}
+
+.location {
+  text-align: center;
+  font-size: 4rem;
+  color: #070663;
+}
+.location-wrapper {
+  padding: 2rem 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.location-wrapper .image-wrap {
+  max-width: 70%;
+}
+.location1,
+.location2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.location-wrapper .text-wrap {
+  margin-top: 2rem;
+  text-align: left !important;
+  font-size: 1.5rem;
+}
+@media (max-width: 912px) {
+  .about-desktop {
+    display: none;
+  }
+
+  .about-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+  }
+  .upper-wrap,
+  .lower-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text h1 {
+    font-size: 3rem;
+    color: #070663;
+  }
+  .about-mobile,
+  p {
+    font-size: 1.5rem;
+    color: #070663;
+  }
+  .lower-wrap .image-wrap {
+    margin-top: -5rem;
+  }
+  .upper-wrap .image-wrap {
+    margin-bottom: -5rem;
+  }
+
+  .about-header h2 {
+    padding: 3rem;
+    font-size: 4rem;
+  }
+  .about-mobile button {
+    background-color: #d1a473;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem 4rem;
+    padding: 1rem 2rem;
+    color: #070663;
+    font-weight: 700;
+  }
+  .location {
+    font-size: 3rem;
+  }
+  /* .location-desktop {
+    display: none;
+  } */
+  .location-wrapper {
+    padding: 2rem;
+  }
+  .location1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  /* .location2 {
+    display: flex;
+    flex-direction: column-reverse;
+  } */
+  .location-mobile {
+  }
+}
+@media (max-width: 512px) {
+  .about-header h2 {
+    padding: 0rem;
+    font-size: 3rem;
+  }
+}
 
 /*  */
 
