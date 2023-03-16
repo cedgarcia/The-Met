@@ -56,6 +56,7 @@ a {
 }
 img {
   width: 100%;
+  display: block;
 }
 
 button,
@@ -298,7 +299,7 @@ textarea {
 ***Header 
 ***/
 header {
-  height: 150vh;
+  /* height: 150vh; */
 }
 nav {
   padding: 2rem 6rem;
@@ -676,6 +677,7 @@ footer h1 {
 footer h3 {
   font-size: 2rem;
   max-width: 75%;
+  color: var(--white);
 }
 .top-line {
   margin-top: 7rem;
