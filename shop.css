@@ -1,0 +1,135 @@
+.secondary-links {
+  background-color: var(--white);
+  margin-top: 13.5rem;
+  padding: 1rem 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.secondary-links a {
+  color: blue;
+  text-transform: uppercase;
+}
+h3 {
+  color: #070663;
+}
+.shop-section h3 {
+  font-size: 1.5rem;
+  padding: 2rem 7rem;
+}
+.load-more {
+  background-color: #d6b695;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.load-more button {
+  background-color: #070663;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding: 1rem 3rem;
+  border-radius: 4px;
+}
+.new-arrivals {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-wrapper {
+  /* background-color: blue; */
+  width: 20vw;
+  padding-bottom: 1.5rem;
+}
+.product-image {
+  max-width: 100%;
+  /* height: 100%; */
+}
+
+.heading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(7, 6, 99, 0.8);
+  color: white;
+  padding: 0 7rem;
+}
+.heading-wrap img {
+  width: 3rem;
+  margin: 0 1rem;
+}
+.heading h1 {
+  font-size: 3.5rem;
+}
+.heading,
+.input-wrap {
+  display: flex;
+  align-items: center;
+}
+.input-wrap {
+  display: flex;
+  position: relative;
+}
+.input-wrap input {
+  padding: 0.3em 0;
+  margin-top: 0.6em;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  background: transparent;
+}
+.input-wrap > ::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+  font-size: 1rem;
+  padding: 0 1rem;
+  letter-spacing: 1px;
+}
+.product-name,
+.product-price {
+  color: #070663;
+}
+@media (max-width: 912px) {
+  .heading-wrap {
+    margin-top: 13.5rem;
+    padding: 0 2rem;
+  }
+  .heading-wrap h1 {
+    font-size: 3rem;
+  }
+  .secondary-links {
+    display: none;
+  }
+  .new-arrivals {
+    padding: 2rem;
+  }
+  .product-wrapper {
+    width: 45%;
+  }
+}
+@media (max-width: 512px) {
+  .heading-wrap {
+    margin-top: 20rem;
+    padding: 1rem;
+  }
+  .heading-wrap img {
+    width: 2rem;
+  }
+  .heading-wrap h1 {
+    font-size: 2rem;
+  }
+  .input-wrap {
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .product-wrapper {
+    width: 100%;
+  }
+}
