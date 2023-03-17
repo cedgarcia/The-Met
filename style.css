@@ -24,6 +24,7 @@ html {
   font-size: 62.5%;
   line-height: 1.6;
   width: 100%;
+  overflow-x: hidden;
 }
 
 h1,
@@ -114,7 +115,7 @@ nav > * {
 }
 .logo {
   color: var(--white);
-  font-size: 3.7rem;
+  /* font-size: 3.7rem; */
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -135,30 +136,37 @@ nav > * {
 }
 @media (max-width: 1036px) {
   nav {
-    padding: 1rem 4rem;
+    padding: 1rem 3rem !important;
   }
   .nav-icons img {
     width: 2.3rem;
     margin: 0 1rem;
   }
-  .logo {
-    font-size: 2.5rem;
+  .logo a {
+    font-size: 4rem;
   }
   .nav-list a {
     font-size: 1.2rem;
   }
+  .nav-list li {
+    padding: 0.5rem;
+  }
 }
-
+@media (min-width: 1037px) {
+  .logo a {
+    font-size: 4.1rem;
+  }
+}
 @media (max-width: 912px) {
   nav {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem !important;
   }
   .nav-icons img {
     width: 1.8rem;
     margin: 0 1rem;
   }
-  .logo {
-    font-size: 2rem;
+  .logo > a {
+    font-size: 2.3rem;
   }
   .nav-list {
     display: none;
@@ -177,8 +185,16 @@ nav > * {
   }
 }
 @media (max-width: 712px) {
-  .logo {
-    font-size: 1rem;
+  .logo a {
+    font-size: 2rem;
+  }
+  .nav-icons img:nth-child(2) {
+    display: none !important;
+  }
+}
+@media (max-width: 540px) {
+  nav {
+    padding: 1rem 1em !important;
   }
 }
 
@@ -219,7 +235,7 @@ form > * {
 ::placeholder {
   color: var(--blue);
   opacity: 1; /* Firefox */
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 textarea {
   resize: none;
@@ -241,6 +257,8 @@ textarea {
 .form-wrap input,
 textarea {
   border: 1px solid var(--blue);
+  padding: 1.3rem 1.8rem;
+  font-size: 1.6rem;
 }
 .contact-image > .places {
   display: none;
@@ -484,13 +502,15 @@ nav .nav__list a {
 }
 nav .logo > a {
   color: var(--white);
-  font-size: 4rem;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
   /* text-align: center; */
 }
+/* .logo a {
+  font-size: 4rem;
+} */
 nav .nav__icons {
   display: flex;
   justify-content: end;
@@ -623,6 +643,24 @@ section.men-women {
   margin-top: 35%;
   margin-left: 27%;
 }
+
+@media (max-width: 580px) {
+  .men-women button {
+    font-size: 1.5rem;
+    padding: 0.6rem 1.6rem;
+
+    /* width: 90%; */
+  }
+  .women button {
+    margin-top: 50%;
+    margin-left: 2%;
+  }
+  .men button {
+    margin-top: 55%;
+    margin-left: 20%;
+  }
+}
+
 /*New Arrivals*/
 
 .new-arrivals {
@@ -901,7 +939,7 @@ footer h3 {
 .footer-links a {
   opacity: 0.5;
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   padding: 0.5rem 0;
 }
 @media (min-width: 912px) {
@@ -1055,7 +1093,7 @@ footer h3 {
   text-align: center;
   color: var(--blue);
 
-  width: 70rem;
+  /* width: 70rem; */
   margin-left: -12rem;
 }
 .hoodie-sweatshirts .image {
@@ -1064,9 +1102,21 @@ footer h3 {
 .text h1 {
   font-size: 4rem;
 }
+.text {
+  align-items: center;
+}
 .text .description {
   padding-top: 2rem;
   font-size: 2rem;
+  width: 60%;
+  align-self: center;
+  margin: 0 auto;
+}
+@media (max-width: 912px) {
+  .text .description {
+    width: 100%;
+    padding-top: 0.6rem;
+  }
 }
 .collections {
   position: relative;
@@ -1135,9 +1185,17 @@ footer h3 {
 .testimonial p {
   font-size: 1.5rem;
 }
+
+@media (max-width: 580px) {
+  .homepage-header h1 {
+    font-size: 2rem !important;
+  }
+}
 @media (max-width: 912px) {
   .homepage-header h1 {
     font-size: 3rem;
+    padding: 0 3rem;
+    top: 70%;
   }
   .men-women {
     margin-top: 6rem;
