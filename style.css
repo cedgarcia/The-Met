@@ -141,8 +141,8 @@ nav > * {
 }
 input:focus ~ label {
   /* bottom: 1.6em; */
-  top: -2rem;
-  /* color: dodgerblue; */
+  bottom: 3rem;
+
   transform: scale(0.75);
   transform-origin: left;
 }
@@ -990,6 +990,21 @@ footer h3 {
   opacity: 0.5;
   text-replace: auto;
   transition-duration: 0.5s;
+}
+@media (min-width: 1000px) {
+  .signup-wrap label {
+    /* bottom: 3rem; */
+    transition: 0.6s ease;
+  }
+}
+@media (max-width: 700px) {
+  input:focus ~ label {
+    /* bottom: 1.6em; */
+    top: -3rem;
+    /* color: dodgerblue; */
+    transform: scale(0.75);
+    transform-origin: left;
+  }
 }
 .signup-wrap button {
   border: 1px solid var(--white);
