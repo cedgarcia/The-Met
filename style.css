@@ -829,6 +829,9 @@ h3 {
   .nav-items > * {
     padding: 0 2rem;
   }
+  .nav-icons img {
+    width: 2.3rem;
+  }
 }
 .heading-wrap {
   display: flex;
