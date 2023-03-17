@@ -195,9 +195,9 @@ textarea:focus {
   nav {
     padding: 1rem 2rem !important;
   }
-  .nav-icons {
+  /* .nav-icons {
     display: none;
-  }
+  } */
   .nav-icons img {
     width: 1.8rem;
     margin: 0 1rem;
@@ -824,20 +824,11 @@ h3 {
   /* height: 100%; */
 }
 .logo {
-  justify-content: flex-start !important;
+  justify-content: center !important;
 }
 .nav-items {
   display: flex;
   justify-content: flex-end;
-}
-
-@media (min-width: 913px) {
-  .nav-items > * {
-    padding: 0 2rem;
-  }
-  .nav-icons img {
-    width: 2.3rem;
-  }
 }
 .heading-wrap {
   display: flex;
