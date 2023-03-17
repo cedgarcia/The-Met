@@ -88,7 +88,8 @@ input[type="reset"] {
 
 nav {
   display: flex;
-  background: var(--dark-blue);
+  /* background: var(--dark-blue); */
+  background-color: #162238;
   color: var(--white);
   padding: 1rem 6rem 0.5rem;
   position: fixed;
@@ -193,6 +194,9 @@ textarea:focus {
 @media (max-width: 912px) {
   nav {
     padding: 1rem 2rem !important;
+  }
+  .nav-icons {
+    display: none;
   }
   .nav-icons img {
     width: 1.8rem;
@@ -326,13 +330,15 @@ textarea {
   text-transform: uppercase;
 }
 .main-nav.active {
-  background: var(--dark-blue) !important;
+  /* background: var(--dark-blue) !important; */
+  background-color: #162238 !important;
   /* opacity: 0.95;
   padding: 0.5rem;
   align-items: center;
   height: 12vh;
   z-index: 5000; */
 }
+
 @media (max-width: 912px) {
   .places-desktop {
     display: none;
@@ -707,7 +713,7 @@ section.men-women {
 }
 .women button {
   margin-top: 35%;
-  margin-left: 27%;
+  margin-left: 20%;
 }
 
 @media (max-width: 580px) {
@@ -951,7 +957,8 @@ footer {
   /* padding: 9rem 7rem 0; */
   height: 100vh;
   width: 100%;
-  background: var(--dark-blue);
+  /* background: var(--dark-blue); */
+  background-color: #23395e;
   color: var(--white);
   display: flex;
   justify-content: space-between;
