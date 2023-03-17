@@ -824,6 +824,12 @@ h3 {
   display: flex;
   justify-content: flex-end;
 }
+
+@media (min-width: 913px) {
+  .nav-items > * {
+    padding: 0 2rem;
+  }
+}
 .heading-wrap {
   display: flex;
   align-items: center;
