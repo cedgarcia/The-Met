@@ -98,6 +98,15 @@ nav {
   right: 0;
   z-index: 100;
 }
+.main-nav {
+  transition: 0.3s ease;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0)
+  ) !important;
+}
 
 nav > * {
   flex-basis: 100%;
@@ -168,8 +177,27 @@ nav > * {
   .logo > a {
     font-size: 2.3rem;
   }
+  /* .nav-list {
+      display: none;
+    } */
+
   .nav-list {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    background-color: var(--dark-blue);
+    width: 100vw;
+    height: 50vh;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .nav-list.visible {
+    opacity: 1;
+    visibility: visible;
   }
   .mobile-menu {
     display: flex;
@@ -257,7 +285,7 @@ textarea {
 .form-wrap input,
 textarea {
   border: 1px solid var(--blue);
-  padding: 1.3rem 1.8rem;
+  padding: 1.3rem 1.6rem;
   font-size: 1.6rem;
 }
 .contact-image > .places {
@@ -266,6 +294,20 @@ textarea {
 .contact-image {
   /* height: 80%; */
   width: 40%;
+}
+.column1 h4,
+.column2 h4,
+.column3 h4 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.main-nav.active {
+  background: var(--dark-blue) !important;
+  /* opacity: 0.95;
+  padding: 0.5rem;
+  align-items: center;
+  height: 12vh;
+  z-index: 5000; */
 }
 @media (max-width: 912px) {
   .places-desktop {
