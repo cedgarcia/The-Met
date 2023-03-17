@@ -168,6 +168,7 @@ textarea:focus {
 .mobile-menu {
   display: none;
 }
+
 @media (max-width: 1036px) {
   nav {
     padding: 1rem 3rem !important;
@@ -537,7 +538,7 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 200;
 }
 
 /***
