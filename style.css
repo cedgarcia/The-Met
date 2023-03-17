@@ -139,6 +139,30 @@ nav > * {
   width: 3rem;
   margin: 0 1rem;
 }
+input:focus ~ label {
+  /* bottom: 1.6em; */
+  top: -2rem;
+  /* color: dodgerblue; */
+  transform: scale(0.75);
+  transform-origin: left;
+}
+.signup-wrap input {
+  color: #fff;
+}
+.form-wrap input:focus,
+textarea:focus {
+  border: 2px solid var(--blue);
+  /* padding: 1.3rem 1.6rem;
+  font-size: 1.6rem; */
+  outline: none;
+}
+.form-wrap input {
+  /* transition: 0.1s ease; */
+  color: #070663;
+}
+.no-outline:focus {
+  outline: none;
+}
 
 .mobile-menu {
   display: none;
@@ -964,6 +988,8 @@ footer h3 {
   font-size: 1.2rem;
   letter-spacing: 1px;
   opacity: 0.5;
+  text-replace: auto;
+  transition-duration: 0.5s;
 }
 .signup-wrap button {
   border: 1px solid var(--white);
